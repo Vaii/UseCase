@@ -88,6 +88,7 @@ namespace UseCase
                 naam.Text = tbNaam.Text;
                 naam.Location = e.Location;
                 naam.BackColor = Color.Transparent;
+                ;
                 naam.Show();
                 pnlTeken.Controls.Add(naam);
                 int x = naam.Location.X - naam.Width / 2;
