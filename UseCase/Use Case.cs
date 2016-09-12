@@ -17,16 +17,17 @@ namespace UseCase
     {
         public Form1()
         {
+            this.caseList = new List<Case>();
             InitializeComponent();
             rbActor.CheckedChanged += new EventHandler(NaamGeven);
             rbUseCase.CheckedChanged += new EventHandler(NaamGeven);
             rbCreate.CheckedChanged += new EventHandler(NaamGeven);
-            List<Case> Case;
         }
 
         bool draw = false;
         Point? clickOne = null;
         Point clickTwo;
+        List<Case> caseList;
 
 
         private void Form1_MouseClick(object sender, MouseEventArgs e)
@@ -100,6 +101,7 @@ namespace UseCase
                 gs.DrawEllipse(p,x,y,width,height);
                 string caseNaam = tbNaam.Text;
                 Case newCase = new Case(caseNaam);
+                caseList.Add(newCase);
             }
 
 
@@ -133,7 +135,9 @@ namespace UseCase
             {
                 if (sender is Label)
                 {
-                    MessageBox.Show("Test");
+                    string currentCase = ((Label)sender).Text;
+                    PropertiesForm caseInfo = new PropertiesForm();
+                    caseInfo.Show();
                 }
             }
         }

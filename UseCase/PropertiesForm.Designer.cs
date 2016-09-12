@@ -35,14 +35,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbResult = new System.Windows.Forms.TextBox();
+            this.tbCaseAannamen = new System.Windows.Forms.TextBox();
+            this.tbCaseActors = new System.Windows.Forms.TextBox();
+            this.tbCaseSummary = new System.Windows.Forms.TextBox();
+            this.tbCaseName = new System.Windows.Forms.TextBox();
             this.btnOpslaan = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.rtbExceptions = new System.Windows.Forms.RichTextBox();
+            this.rtbDescription = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -108,40 +108,40 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Resultaat:";
             // 
-            // textBox1
+            // tbResult
             // 
-            this.textBox1.Location = new System.Drawing.Point(93, 428);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(420, 20);
-            this.textBox1.TabIndex = 7;
+            this.tbResult.Location = new System.Drawing.Point(93, 428);
+            this.tbResult.Name = "tbResult";
+            this.tbResult.Size = new System.Drawing.Size(420, 20);
+            this.tbResult.TabIndex = 7;
             // 
-            // textBox2
+            // tbCaseAannamen
             // 
-            this.textBox2.Location = new System.Drawing.Point(93, 90);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(420, 20);
-            this.textBox2.TabIndex = 8;
+            this.tbCaseAannamen.Location = new System.Drawing.Point(93, 90);
+            this.tbCaseAannamen.Name = "tbCaseAannamen";
+            this.tbCaseAannamen.Size = new System.Drawing.Size(420, 20);
+            this.tbCaseAannamen.TabIndex = 8;
             // 
-            // textBox3
+            // tbCaseActors
             // 
-            this.textBox3.Location = new System.Drawing.Point(93, 64);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(420, 20);
-            this.textBox3.TabIndex = 9;
+            this.tbCaseActors.Location = new System.Drawing.Point(93, 64);
+            this.tbCaseActors.Name = "tbCaseActors";
+            this.tbCaseActors.Size = new System.Drawing.Size(420, 20);
+            this.tbCaseActors.TabIndex = 9;
             // 
-            // textBox4
+            // tbCaseSummary
             // 
-            this.textBox4.Location = new System.Drawing.Point(93, 38);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(420, 20);
-            this.textBox4.TabIndex = 10;
+            this.tbCaseSummary.Location = new System.Drawing.Point(93, 38);
+            this.tbCaseSummary.Name = "tbCaseSummary";
+            this.tbCaseSummary.Size = new System.Drawing.Size(420, 20);
+            this.tbCaseSummary.TabIndex = 10;
             // 
-            // textBox5
+            // tbCaseName
             // 
-            this.textBox5.Location = new System.Drawing.Point(93, 12);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(420, 20);
-            this.textBox5.TabIndex = 11;
+            this.tbCaseName.Location = new System.Drawing.Point(93, 12);
+            this.tbCaseName.Name = "tbCaseName";
+            this.tbCaseName.Size = new System.Drawing.Size(420, 20);
+            this.tbCaseName.TabIndex = 11;
             // 
             // btnOpslaan
             // 
@@ -152,35 +152,35 @@
             this.btnOpslaan.Text = "Opslaan";
             this.btnOpslaan.UseVisualStyleBackColor = true;
             // 
-            // richTextBox1
+            // rtbExceptions
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(93, 273);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(420, 149);
-            this.richTextBox1.TabIndex = 13;
-            this.richTextBox1.Text = "";
+            this.rtbExceptions.Location = new System.Drawing.Point(93, 273);
+            this.rtbExceptions.Name = "rtbExceptions";
+            this.rtbExceptions.Size = new System.Drawing.Size(420, 149);
+            this.rtbExceptions.TabIndex = 13;
+            this.rtbExceptions.Text = "";
             // 
-            // richTextBox2
+            // rtbDescription
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(93, 116);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(420, 151);
-            this.richTextBox2.TabIndex = 14;
-            this.richTextBox2.Text = "";
+            this.rtbDescription.Location = new System.Drawing.Point(93, 116);
+            this.rtbDescription.Name = "rtbDescription";
+            this.rtbDescription.Size = new System.Drawing.Size(420, 151);
+            this.rtbDescription.TabIndex = 14;
+            this.rtbDescription.Text = "";
             // 
             // PropertiesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(525, 489);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.rtbDescription);
+            this.Controls.Add(this.rtbExceptions);
             this.Controls.Add(this.btnOpslaan);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbCaseName);
+            this.Controls.Add(this.tbCaseSummary);
+            this.Controls.Add(this.tbCaseActors);
+            this.Controls.Add(this.tbCaseAannamen);
+            this.Controls.Add(this.tbResult);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -204,13 +204,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbResult;
+        private System.Windows.Forms.TextBox tbCaseAannamen;
+        private System.Windows.Forms.TextBox tbCaseActors;
+        private System.Windows.Forms.TextBox tbCaseSummary;
+        private System.Windows.Forms.TextBox tbCaseName;
         private System.Windows.Forms.Button btnOpslaan;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox rtbExceptions;
+        private System.Windows.Forms.RichTextBox rtbDescription;
     }
 }
