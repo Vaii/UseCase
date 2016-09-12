@@ -182,6 +182,7 @@
             this.Name = "Form1";
             this.Text = "Use Case";
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseClick);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.gbElement.ResumeLayout(false);
             this.gbElement.PerformLayout();
             this.gbMode.ResumeLayout(false);

@@ -84,6 +84,7 @@ namespace UseCase
             if (rbUseCase.Checked && rbCreate.Checked && !string.IsNullOrWhiteSpace(tbNaam.Text))
             {
                 Label naam = new Label();
+                naam.MouseDown += new MouseEventHandler(pnlTeken_MouseDown);
                 naam.Name = tbNaam.Text;
                 naam.Text = tbNaam.Text;
                 naam.Location = e.Location;
@@ -101,12 +102,9 @@ namespace UseCase
                 Case newCase = new Case(caseNaam);
             }
 
-            if (rbSelect.Checked)
-            {
 
-            }
         }
-            
+          
         private void pnlTeken_MouseDown(object sender, MouseEventArgs e)
         { 
 
@@ -130,6 +128,18 @@ namespace UseCase
 
 
             }
+
+            if (rbSelect.Checked)
+            {
+                if (sender is Label)
+                {
+                    MessageBox.Show("Test");
+                }
+            }
+        }
+
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
         }
     }
 }
