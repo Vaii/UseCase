@@ -7,19 +7,19 @@ using System.Windows.Forms;
 
 namespace UseCase
 {
-    class Case
+    public class Case
     {
         public Case(string naam)
         {
             this.Naam = naam;
         }
 
-        private string Naam;
-        string Samenvatting;
-        string Actoren;
-        string Aannamen;
-        string Beschrijving;
-        string Uitzondering;
-        string Resultaat;
+        public string Naam;
+        public string Samenvatting;
+        public string Actoren;
+        public string Aannamen;
+        public string Beschrijving;
+        public string Uitzondering;
+        public string Resultaat;
     }
 }

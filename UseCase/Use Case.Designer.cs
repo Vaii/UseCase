@@ -37,7 +37,6 @@
             this.gbMode = new System.Windows.Forms.GroupBox();
             this.rbCreate = new System.Windows.Forms.RadioButton();
             this.rbSelect = new System.Windows.Forms.RadioButton();
-            this.btnRemove = new System.Windows.Forms.Button();
             this.btnClearAll = new System.Windows.Forms.Button();
             this.pnlTeken = new System.Windows.Forms.Panel();
             this.gbElement.SuspendLayout();
@@ -142,15 +141,6 @@
             this.rbSelect.Text = "Select";
             this.rbSelect.UseVisualStyleBackColor = true;
             // 
-            // btnRemove
-            // 
-            this.btnRemove.Location = new System.Drawing.Point(615, 12);
-            this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(75, 23);
-            this.btnRemove.TabIndex = 3;
-            this.btnRemove.Text = "Remove";
-            this.btnRemove.UseVisualStyleBackColor = true;
-            // 
             // btnClearAll
             // 
             this.btnClearAll.Location = new System.Drawing.Point(615, 41);
@@ -159,6 +149,7 @@
             this.btnClearAll.TabIndex = 4;
             this.btnClearAll.Text = "Clear All";
             this.btnClearAll.UseVisualStyleBackColor = true;
+            this.btnClearAll.Click += new System.EventHandler(this.btnClearAll_Click);
             // 
             // pnlTeken
             // 
@@ -175,7 +166,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(702, 512);
             this.Controls.Add(this.btnClearAll);
-            this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.gbMode);
             this.Controls.Add(this.gbElement);
             this.Controls.Add(this.pnlTeken);
@@ -200,7 +190,6 @@
         private System.Windows.Forms.GroupBox gbMode;
         private System.Windows.Forms.RadioButton rbSelect;
         private System.Windows.Forms.RadioButton rbCreate;
-        private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnClearAll;
         private System.Windows.Forms.Label lblNaam;
         private System.Windows.Forms.TextBox tbNaam;

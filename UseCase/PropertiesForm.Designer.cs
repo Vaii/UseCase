@@ -151,6 +151,7 @@
             this.btnOpslaan.TabIndex = 12;
             this.btnOpslaan.Text = "Opslaan";
             this.btnOpslaan.UseVisualStyleBackColor = true;
+            this.btnOpslaan.Click += new System.EventHandler(this.btnOpslaan_Click);
             // 
             // rtbExceptions
             // 
@@ -190,6 +191,7 @@
             this.Controls.Add(this.label1);
             this.Name = "PropertiesForm";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.PropertiesForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

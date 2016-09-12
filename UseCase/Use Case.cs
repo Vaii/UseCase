@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Drawing.Text;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,7 +18,7 @@ namespace UseCase
     {
         public Form1()
         {
-            this.caseList = new List<Case>();
+           this.caseList = new List<Case>();
             InitializeComponent();
             rbActor.CheckedChanged += new EventHandler(NaamGeven);
             rbUseCase.CheckedChanged += new EventHandler(NaamGeven);
@@ -136,7 +137,7 @@ namespace UseCase
                 if (sender is Label)
                 {
                     string currentCase = ((Label)sender).Text;
-                    PropertiesForm caseInfo = new PropertiesForm();
+                    PropertiesForm caseInfo = new PropertiesForm(caseList, currentCase);
                     caseInfo.Show();
                 }
             }
@@ -144,6 +145,12 @@ namespace UseCase
 
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
+        }
+
+        private void btnClearAll_Click(object sender, EventArgs e)
+        {
+            pnlTeken.Controls.Clear();
+            pnlTeken.Invalidate();
         }
     }
 }
