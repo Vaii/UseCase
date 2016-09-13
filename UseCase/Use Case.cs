@@ -151,6 +151,7 @@ namespace UseCase
         {
             pnlTeken.Controls.Clear();
             pnlTeken.Invalidate();
+            caseList.Clear();;
         }
     }
 }

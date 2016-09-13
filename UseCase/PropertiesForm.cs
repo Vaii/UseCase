@@ -17,6 +17,7 @@ namespace UseCase
 
         public PropertiesForm(List<Case> caseList, string naam)
         {
+            InitializeComponent();
             CaseList = caseList;
             Naam = naam;
         }
