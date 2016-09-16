@@ -90,12 +90,13 @@ namespace UseCase
                 naam.Name = tbNaam.Text;
                 naam.Text = tbNaam.Text;
                 naam.Location = e.Location;
+                naam.AutoSize = true;
                 naam.BackColor = Color.Transparent;
                 naam.Show();
                 pnlTeken.Controls.Add(naam);
                 int x = naam.Location.X - naam.Width / 2;
                 int y = naam.Location.Y - naam.Height / 2;
-                int width = naam.Width + 40 ;
+                int width = naam.Width + 40;
                 int height = naam.Height + 20 ;
                 Graphics gs = pnlTeken.CreateGraphics();
                 Pen p = new Pen(Color.Black);
